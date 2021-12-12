@@ -175,7 +175,10 @@ def ensayos(path, name, ensayo):
     new_col = pd.Index(['ensayo_' + str(e[1]) for e in multi_col.tolist()])
     df_total.columns = new_col
     df_ens = df_total.copy()
-    df_ens = df_ens[[ensayo]]
+    try:
+        df_ens = df_ens[[ensayo]]
+    except:
+        df_ens = df_ens
     df_ens = pd.pivot_table(data=df_ens,
                index=['miDt'],
                columns=['punto_muestreo']
@@ -187,3 +190,30 @@ def ensayos(path, name, ensayo):
     df_ens.to_csv(f'../data/{ensayo}/{name}')
     return print(f'{path}  modificado para {ensayo} y guadado corectamente en ../data/modificados/{name}')
 
+def union_ensayos(path,lista_arch, ensayo):
+    '''
+    Funcion para unir los csv del ayuntamineto y la comunidad
+    Arg:
+    path = dirección relativa hasta la carpeta contenedora de los archivos
+    lista_arch = listado de los archivos de la capreta del path
+    ensayo = nombre del ensayo a unificar
+    ''' 
+    data_day_list = []
+    elements=len(lista_arch)
+    if elements%2==0:
+        mid_list = elements/2
+    else:
+        mid_list = elements/2 - 1
+    for i in range(mid_list):
+        ii = 2*i
+        a1 = pd.read_csv(f'{path}/{lista_arch[i]}', index_col=0)
+        a1.index = pd.to_datetime(a1.index)
+        a1 = a1.asfreq('H')
+        c1 = pd.read_csv(f'{path}/{lista_arch[ii]}', index_col=0)
+        c1.index = pd.to_datetime(c1.index)
+        c1 = c1.asfreq('H')
+        merge=pd.merge(a1,c1, how='inner', left_index=True, right_index=True)
+        data_day_list.append(merge)  
+    final_df = pd.concat(data_day_list)
+    final_df.to_csv(f'../data/t_{ensayo}.csv')
+    return print(f'archivos creado y guardado ../data/t_{ensayo}.csv' )
