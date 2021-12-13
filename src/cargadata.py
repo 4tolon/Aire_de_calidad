@@ -224,3 +224,17 @@ def carga(path):
     df.index = pd.to_datetime(df.index)
     df = df.asfreq('H')
     return df
+
+def freqypos(freq, df):
+    est = pd.read_csv('../data/coordenadas_est.csv')
+    dic_v = {}
+    for i, r in est.iterrows(): 
+        dic_v[str(int(r.code))] = (r.lat, r.lon)
+    df = df.resample(freq).mean()
+    df = df.reset_index()
+    df = df.melt(['index'])
+    df['coord'] = df['variable'].map(dic_v)
+    df['lat'] = df['coord'].str[0]
+    df['lon'] = df['coord'].str[1]
+    df.drop('coord', axis=1, inplace=True)
+    return df
