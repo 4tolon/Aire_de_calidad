@@ -217,3 +217,10 @@ def union_ensayos(path,lista_arch, ensayo):
     final_df = pd.concat(data_day_list)
     final_df.to_csv(f'../data/t_{ensayo}.csv')
     return print(f'archivos creado y guardado ../data/t_{ensayo}.csv' )
+
+
+def carga(path):
+    df = pd.read_csv(path, index_col=0)
+    df.index = pd.to_datetime(df.index)
+    df = df.asfreq('H')
+    return df
