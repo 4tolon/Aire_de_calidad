@@ -237,4 +237,5 @@ def freqypos(freq, df):
     df['lat'] = df['coord'].str[0]
     df['lon'] = df['coord'].str[1]
     df.drop('coord', axis=1, inplace=True)
+    df.rename({'index':'fecha', 'variable':'estacion'}, axis=1, inplace=True)
     return df
