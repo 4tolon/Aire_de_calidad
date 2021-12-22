@@ -1,6 +1,8 @@
 # Aire de calidad
 
-Un análisis temporal de la calidad del aire de la ciudad y la comunidada de Madrid.
+Un análisis temporal de la calidad del aire de la ciudad y la comunidada de Madrid. Seis años de ensayos cada hora en 48 estaciones de medida.
+
+La presentación completa se puede ver en el siguiente enlace a Tableau Public:
 
 https://public.tableau.com/app/profile/fernando6962/viz/deMadrid/PresesntacionFinal
 
@@ -9,18 +11,18 @@ https://public.tableau.com/app/profile/fernando6962/viz/deMadrid/PresesntacionFi
 ![](/img/Dashboard.png)
 
 # Objetivo
-El objetivo del proyecto ha sido la creación de una presentacion original  en Tableau, la manipulacion de grandes volumenes de datos y archivos mediante codigo Python, a través de funciones creadas en **scr/funciones.py** y de numerosos cuadernos de Jupyter Notebooks manejados con Jupyter Lab. 
+El objetivo del proyecto ha sido la creación de una presentacion original  en Tableau, la manipulación de grandes volómenes de datos y archivos mediante codigo Python, a través de funciones creadas en **scr/funciones.py** y de numerosos cuadernos de Jupyter Notebooks manejados con Jupyter Lab. 
 
 ### Dashboard final:
 
-En este dash board se puede selecionar la estacion de medidad que quieras del ayuntamiento o de la comunidad de Madrid. Mediante un filto a la serie temporal se piede limitar la informacion mostrada en cada gráfica a un rango de tiempo concreto de los últimos seis años. Toda la información mostrada se ajusta a ese rango.
+En este dash board se puede selecionar la estación de medidad que quieras del ayuntamiento o de la comunidad de Madrid. Mediante un filto a la serie temporal se piede limitar la información mostrada en cada gráfica a un rango de tiempo concreto de los últimos seis años. Toda la información mostrada se ajusta a ese rango.
 
 ![](/img/dash1.png)
 
 ### Descripción:
 
 **Parte central** 
-- Estacion de medida: Selección de la estacion de medida por código-
+- Estación de medida: Selección de la estación de medida por código.
 - Rango de fechas de cálculo. Selección mediante introducción directa de fechas o deslizantes.
 - Mapa: localización de la estación selecionada.
 - Ensayos de calidad de arie en esa estación.
