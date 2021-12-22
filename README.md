@@ -11,7 +11,7 @@ https://public.tableau.com/app/profile/fernando6962/viz/deMadrid/PresesntacionFi
 # Objetivo
 El objetivo del proyecto ha sido la creación de una presentacion original  en Tableau, la manipulacion de grandes volumenes de datos y archivos mediante codigo Python, a través de funciones creadas en **scr/funciones.py** y de numerosos cuadernos de Jupyter Notebooks manejados con Jupyter Lab. 
 
-### Dashboad final:
+### Dashboard final:
 
 En este dash board se puede selecionar la estacion de medidad que quieras del ayuntamiento o de la comunidad de Madrid. Mediante un filto a la serie temporal se piede limitar la informacion mostrada en cada gráfica a un rango de tiempo concreto de los últimos seis años. Toda la información mostrada se ajusta a ese rango.
 
