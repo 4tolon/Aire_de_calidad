@@ -43,13 +43,13 @@ En este dash board se puede selecionar la estación de medidad que quieras del a
 Descarga de datos en el portal de datos abiertos de la comunidad  y el ayuntamiento de **Madrid**. 
 
 
-Coordinación de los archivos optenidos mediane manipulacion con **Pandas** 
+Coordinación de los archivos obtenidos mediane manipulación con **Pandas** 
 
 EDA; análisis explorarorio de los datos unificados. 
 
-Ensayos con difenrentes tipos de tecnologias de visualización, desde el propio pandas, pasando por seaborn y matplotlib, folium o kepler.
+Ensayos con difenrentes tipos de tecnologías de visualización, desde el propio pandas, pasando por seaborn y matplotlib, folium o kepler.
 
-Determinación de no implemetar la idea de mostrar los datos como si fueran estratos geológicos en prefiles selcionados que atravesasen la comundad de Madrid. La alta variabilidad de los datos de una hora a la siguiente me hacen desistir de la idea. No hay una constancia ni estabilidad que propicien la creacion de perfiles de contaminates. 
+Determinación de no implemetar la idea de mostrar los datos como si fueran estratos geológicos en prefiles selcionados que atravesasen la comundad de Madrid. La alta variabilidad de los datos de una hora a la siguiente me hacen desistir de la idea. No hay una constancia ni estabilidad que propicien la creación de perfiles de contaminates. 
 
 Selección de Tableau como herramienta de visualización para mostrar los datos manipulados.
 
