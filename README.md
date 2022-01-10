@@ -11,7 +11,7 @@ https://public.tableau.com/app/profile/fernando6962/viz/deMadrid/PresesntacionFi
 ![](/img/Dashboard.png)
 
 # Objetivo
-El objetivo del proyecto ha sido la creación de una presentacion original  en Tableau, la manipulación de grandes volómenes de datos y archivos mediante codigo Python, a través de funciones creadas en **scr/funciones.py** y de numerosos cuadernos de Jupyter Notebooks manejados con Jupyter Lab. 
+El objetivo del proyecto ha sido la coordinacion de dos fuentes de datos temporales y la creación de una presentacion original  en Tableau, la manipulación de grandes volómenes de datos y archivos mediante codigo Python, a través de funciones creadas en **scr/funciones.py** y de numerosos cuadernos de Jupyter Notebooks manejados con Jupyter Lab. 
 
 ### Dashboard final:
 
